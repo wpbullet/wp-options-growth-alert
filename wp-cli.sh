@@ -6,7 +6,7 @@
 OPTIONSTHRESHOLD=2000
 
 # path to WordPress installation
-WPPATH=/var/www/wp-bullet.online
+WPPATH=/var/www/wp-bullet.com
 
 # get wp_options table
 WPOPTIONSTABLE=$(wp db tables --scope=blog --url=$(wp option get siteurl --path=$WPPATH --allow-root) --path=$WPPATH --allow-root | grep _options)
